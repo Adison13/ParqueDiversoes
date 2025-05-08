@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.CadastroController"
+      alignment="CENTER"
+      spacing="15"
+      stylesheets="@../view/style.css"
+      prefWidth="400" prefHeight="450">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Cadastro de Cliente 📝" style="-fx-font-size: 18px;"/>
+
+    <TextField fx:id="txtNome" promptText="Nome" prefWidth="250"/>
+    <TextField fx:id="txtCpf" promptText="CPF" prefWidth="250"/>
+    <TextField fx:id="txtEmail" promptText="Email" prefWidth="250"/>
+    <PasswordField fx:id="txtSenha" promptText="Senha" prefWidth="250"/>
+
+    <Button text="Cadastrar" onAction="#cadastrar" prefWidth="150"/>
+
+    <Label fx:id="lblMensagem" style="-fx-text-fill: red;"/>
+
+</VBox>
+

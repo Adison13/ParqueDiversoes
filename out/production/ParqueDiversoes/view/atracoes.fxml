@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controller.AtracaoController"
+      alignment="CENTER"
+      spacing="20"
+      prefWidth="700" prefHeight="500"
+      stylesheets="@../view/style.css">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="🎡 Atrações Disponíveis 🎡" style="-fx-font-size: 22px;" />
+
+    <TableView fx:id="tabelaAtracoes" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colNome" text="Nome" prefWidth="180"/>
+            <TableColumn fx:id="colDescricao" text="Descrição" prefWidth="200"/>
+            <TableColumn fx:id="colHorario" text="Horário" prefWidth="120"/>
+            <TableColumn fx:id="colCapacidade" text="Capacidade" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <Button text="Participar da Atração" onAction="#btnParticiparAction" prefWidth="200"/>
+
+</VBox>
+
+
+
+
+
+
+

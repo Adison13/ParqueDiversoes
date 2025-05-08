@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400" prefWidth="600" spacing="15" stylesheets="@../view/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label style="-fx-font-size: 24px; -fx-font-weight: bold;" text="🎢 Bem-vindo ao Parque" />
+
+    <TextField fx:id="txtEmail" prefHeight="23.0" prefWidth="16.0" promptText="Digite seu Email" />
+    <PasswordField fx:id="txtSenha" prefHeight="23.0" prefWidth="421.0" promptText="Digite sua Senha" />
+
+    <HBox alignment="CENTER" spacing="20">
+        <Button onAction="#loginAction" prefWidth="120" text="Login"/>
+        <Button onAction="#abrirCadastro" prefWidth="120" text="Cadastrar" />
+    </HBox>
+
+    <Label fx:id="lblMensagem" style="-fx-font-size: 14px;" textFill="red" />
+
+</VBox>
