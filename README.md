@@ -45,4 +45,4 @@ Caso necessário, o script SQL para criação/modificação de tabelas está inc
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/SeuUsuario/ParqueDiversoes.git
+   git clone https://github.com/Adison13/ParqueDiversoes.git
